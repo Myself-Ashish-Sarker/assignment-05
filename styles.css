@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .css-nav-list {
+        display: none;
+    }
+
+    .css-banner {
+        max-width: 88%;
+    }
+
+}

@@ -9,16 +9,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- linking daisyUi -->
 
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- linking CSS -->
+
     <title>Document</title>
 </head>
 <body>
     <!-- header section -->
     <!-- nav section -->
-    <nav class="flex justify-between items-center px-44 py-4">
+    <nav class="flex justify-between items-center lg:px-44 lg:py-4 px-8 py-8">
         <div>
             <h1 class="text-3xl font-bold cursor-pointer">P-Ticket</h1>
         </div>
-        <div>
+        <div class="css-nav-list">
             <ul class="flex gap-4 cursor-pointer">
                 <li>Home</li>
                 <li>About</li>
@@ -34,15 +38,20 @@
 
     <!-- banner section -->
     <div class="relative flex justify-center">
-        <img src="./assets/banner.png" alt="">
-        <h1 class="absolute top-20 text-5xl font-extrabold text-white">End-to-End Travel with</h1>
-        <h1 class="absolute top-36 text-5xl font-extrabold text-[#1DD100]">P Paribahan</h1>
-        <p class="absolute top-52 w-[35rem] text-center text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-        <button class="absolute top-96 btn w-[13rem] h-[4rem] bg-[#1DD100] border-[#1DD100] text-2xl text-black cursor-pointer hover:bg-[#1DD100]">Buy Tickets</button>
+        <img class="css-banner" src="./assets/banner.png" alt="">
+        <h1 class="absolute lg:top-20 top-8 lg:text-5xl text-2xl font-extrabold text-white">End-to-End Travel with</h1>
+        <h1 class="absolute lg:top-36 top-16 lg:text-5xl text-2xl font-extrabold text-[#1DD100]">P Paribahan</h1>
+        <p class="absolute lg:top-52 top-28 lg:w-[35rem] w-[30rem] text-center text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        <button class="absolute lg:top-96 top-44 btn lg:w-[13rem] lg:h-[4rem] bg-[#1DD100] border-[#1DD100] lg:text-2xl text-black cursor-pointer hover:bg-[#1DD100]">Buy Tickets</button>
     </div>
     <!-- banner section -->
-
     <!-- header section -->
+
+    <!-- main section -->
+    <main>
+        <section></section>
+    </main>
+    <!-- main section -->
 
     <script src="./main.js"></script>
 </body>
