@@ -4,9 +4,9 @@ const totalPrice = document.querySelector('.total-price');
 const grandPrice = document.querySelector('.grand-total-price');
 
 const inputBox = document.querySelector('.text-value');
-const applyBtn = document.querySelector('.apply-btn');
+const okBtn = document.querySelector('.apply-btn');
 
-const inputValue = inputBox.value;
+
 
 let count = 0;
 let totalPriceTicket = 0;
@@ -43,8 +43,38 @@ for (const btns of allBtn) {
 
             grandPriceTicket += 550;
             grandPrice.innerHTML = grandPriceTicket;
+
+            
         }
     })
+}
+
+okBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    const inputValue = inputBox.value.toUpperCase();
+
+    if (inputValue === 'NEW15' || inputValue === 'COUPLE20') {
+
+        grandPrice.innerText = grandPriceTicket;
+
+        if (count === 4) {
+            applyDiscount();
+            hideInputAndButton();
+        }
+    }
+})
+
+
+function applyDiscount() {
+    const inputValue = inputBox.value.toUpperCase();
+
+    if (inputValue === 'NEW15') {
+        grandPriceTicket *= 0.85;
+    } else if (inputValue === 'COUPLE20') {
+        grandPriceTicket *= 0.80;
+    }
+
+    grandPrice.innerText = grandPriceTicket;
 }
 
 
@@ -53,4 +83,12 @@ function appendHtml(btntxt) {
     const appendTicket = "<div class = 'flex gap-[8rem]'>" + "<h1 class=''>" + btntxt + "</h1>" + "<h1 class=''>Economy</h1>" + "<h1 class=''>550</h1>" + "</div>"
 
     appendContainer.innerHTML +=appendTicket;
+}
+
+
+
+
+function hideInputAndButton () {
+    inputBox.style.display = 'none';
+    okBtn.style.display = 'none'
 }
