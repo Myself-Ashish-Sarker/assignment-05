@@ -6,7 +6,12 @@ const grandPrice = document.querySelector('.grand-total-price');
 const inputBox = document.querySelector('.text-value');
 const okBtn = document.querySelector('.apply-btn');
 
-
+const modAl = document.getElementById('mod-al');
+const nextBtn = document.getElementById('next-btn');
+const nav = document.getElementById('nav');
+const banner = document.getElementById('banner');
+const main = document.getElementById('main')
+const footer = document.getElementById('footer');
 
 let count = 0;
 let totalPriceTicket = 0;
@@ -44,10 +49,21 @@ for (const btns of allBtn) {
             grandPriceTicket += 550;
             grandPrice.innerHTML = grandPriceTicket;
 
-            
         }
     })
 }
+
+nextBtn.addEventListener('click', () => {
+    if (count > 0) {
+        modAl.style.display = 'block';
+        nav.style.display = 'none';
+        banner.style.display = 'none';
+        main.style.display = 'none';
+        footer.style.display = 'none';
+    }
+})
+
+
 
 okBtn.addEventListener('click', (event) => {
     event.preventDefault();

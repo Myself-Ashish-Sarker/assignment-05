@@ -19,11 +19,25 @@
 
         <title>Document</title>
     </head>
-    <body>
+    <body class="total-body">
+
+        <div id="mod-al" class="flex justify-center items-center h-[100vh]">
+            <div  class="flex justify-center items-center h-[100vh]">
+                <div class="flex flex-col justify-center items-center w-[46rem] h-[20rem] bg-gray-500 rounded-md">
+                    <img class="w-12 h-12" src="./assets/success.png">
+                    <h1 class=" text-center text-xl text-[#27AE60] font-bold">Success</h1>
+                    <h1 class="mt-[1rem] text-center text-xl font-bold">Thank you for Booking Our Bus Seats. </h1>
+                    <h1 class="text-center text-xl font-bold">We are working hard to find the best service and deals for you.</h1>
+                    <p>Shortly you will find a confirmation in your email.</p>
+                    <button class="mt-[1rem] btn w-[10rem] bg-[#27AE60]">Continue</button>
+                </div>
+            </div>
+        </div>
+
         <!-- header section -->
         <!-- nav section -->
-        <nav
-            class="flex justify-between items-center lg:px-44 lg:py-4 px-8 py-8"
+        <nav id="nav"
+            class="flex  justify-between items-center lg:px-44 lg:py-4 px-8 py-8"
         >
             <div>
                 <h1 class="text-3xl font-bold cursor-pointer">P-Ticket</h1>
@@ -47,7 +61,7 @@
         <!-- nav section -->
 
         <!-- banner section -->
-        <div class="relative flex justify-center">
+        <div id="banner" class="relative flex justify-center">
             <img class="css-banner" src="./assets/banner.png" alt="" />
             <h1
                 class="absolute lg:top-20 top-8 lg:text-5xl text-2xl font-extrabold text-white"
@@ -77,7 +91,7 @@
         <!-- header section -->
 
         <!-- main section -->
-        <main>
+        <main id="main">
             <!-- first section -->
             <section class="">
                 <h1 class="mt-16 text-center text-4xl font-extrabold">
@@ -249,7 +263,7 @@
                 <section id="ticket-section">
                     <div class="relative pb-20">
                         <div
-                            class="relative mt-10 w-[73rem] h-[35rem] bg-white rounded-md border-2 ml-auto mr-auto"
+                            class="relative mt-10 w-[73rem] h-[37rem] bg-white rounded-md border-2 ml-auto mr-auto"
                         >
                             <div class="css-ver-line"></div>
                             <h1 class="mt-4 ml-4 text-2xl font-bold">
@@ -304,7 +318,7 @@
                             <hr
                                 class="absolute top-[4rem] right-4 ml-[1%] w-[36%] border-2 border-dashed"
                             />
-                            <div class="absolute flex flex-col top-[6rem] right-4 w-[26.4rem] h-[26rem] bg-[#F7F8F8] rounded-md">
+                            <div class="absolute flex flex-col top-[6rem] right-4 w-[26.4rem] h-[28rem] bg-[#F7F8F8] rounded-md">
                                 <div class="flex justify-center gap-[7rem] px-4 mt-4">
                                     <div class="flex gap-2">
                                         <h1 class="font-semibold">Seat</h1>
@@ -326,7 +340,7 @@
                                 </div>
 
                                 <form class="absolute mt-[16rem] left-[4rem] ">
-                                    <input type="text" placeholder="Type here" class="input input-bordered w-[14rem] text-value" />
+                                    <input type="text" placeholder="have coupon?" class="input input-bordered w-[14rem] text-value" />
                                     <button class="btn bg-[#1DD100] text-white apply-btn">Apply</button>
                                 </form>
 
@@ -334,6 +348,12 @@
                                     <h1 class="text-xl font-bold">Grand Total</h1>
                                     <h1 class="text-xl font-bold">BDT &nbsp;&nbsp;<span class="grand-total-price">   0</span></h1>
                                 </div>
+
+                                <div>
+                                    <button id="next-btn" class="absolute w-[94%] top-[24rem] ml-4 btn bg-[#1DD100]  apply-btn">Next</button>
+                                </div>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -345,7 +365,7 @@
         <!-- main section -->
 
         <!-- footer -->
-        <footer class=" bg-black px-20 py-20">
+        <footer id="footer" class=" bg-black px-20 py-20">
             <div class="flex justify-between">
                 <h1 class="text-3xl text-white">P-Ticket</h1>
                 <p class="text-white">Download our app</p>

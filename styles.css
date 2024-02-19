@@ -6,6 +6,10 @@
     left: 60%;
 }
 
+#mod-al {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .css-nav-list {
         display: none;
